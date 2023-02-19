@@ -15,4 +15,12 @@ class BaseController {
           description: 'Oops! It took longer to respond.');
     }
   }
+
+  showLoading(String message) {
+    DialogHelper.showLoading(message);
+  }
+
+  hideLoading() {
+    DialogHelper.hideLoading();
+  }
 }
